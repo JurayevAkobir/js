@@ -125,13 +125,15 @@ console.log(bittaBuqanigM);*/
 /*let son = +prompt("son kiriting");
 let juft = 2;
 
-if (son / 2){
+if (son % juft == 0){
     console.log("juft");
-} else if (son / 2 ) {
+} else if (son % juft !== 0) {
     console.log("toq");
+} else {
+    console.log("son kiritilmadi");
 }*/
 
-// ! 2. musbat va manfiy 
+// ? 2. musbat va manfiy 
 /* let son = +prompt("son kiriting");
 
 if (son > 0 ){
@@ -174,14 +176,14 @@ if (a > b && a < c){
     console.log("son kiritilmadi");
 } */
 
-// ! 5. a va b sonlarni ikkalasi ham toqligi 
-/*let son = +prompt("son kiriting");
-let juft = 2;
+// ? 5. a va b sonlarni ikkalasi ham toqligi 
+/*let a = +prompt("a, son kiriting");
+let b = +prompt("b, son kiriting");
 
-if (son / 2){
-    console.log("juft");
-} else if (son / 2 ) {
-    console.log("toq");
+if (a % 2 !== 0 && b % 2 !== 0){
+    console.log("ikkalasi ham toq");
+}else {
+    console.log("ikkalasi ham toq emas");
 }*/
 
 // ? 6. a, b, c, d, barchasini musbatligini tekshirish 
@@ -292,7 +294,26 @@ if (a > b && a > c){
     console.log("son kiritilmadi");
 } */
 
-// ? 13. a, b va c sonlardan kichigini aniqlash
+
+// ! 13. a son musbat manfiy va juft toqligini aniqlash
+/*let a = +prompt("a, son kiriting");
+let ikki = 2;
+
+if (a % ikki == 0 || a > 0) {
+    console.log("a son juft va musbat son");
+} else if (a % ikki == 0 || a < 0) {
+    console.log("a son juft va manfiy son");
+} else if (a % ikki !== 0 || a < 0) {
+    console.log("a son toq va manfiy son");
+} else if (a % ikki !== 0 || a > 0) {
+    console.log("a son toq va musbat son");
+} else if (a == 0) {
+    console.log("juft ham emas toq ham emas, manfiy va musbat ham emas");
+} else {
+    console.log("son kiritilmadi");
+}*/
+
+// ? 14. a, b va c sonlardan kichigini aniqlash
 /*let a = +prompt("a, son kiriting");
 let b = +prompt("b, son kiriting");
 let c = +prompt("c, son kiriting");
