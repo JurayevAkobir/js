@@ -295,17 +295,17 @@ if (a > b && a > c){
 } */
 
 
-// ! 13. a son musbat manfiy va juft toqligini aniqlash
+// ? 13. a son musbat manfiy va juft toqligini aniqlash
 /*let a = +prompt("a, son kiriting");
 let ikki = 2;
 
-if (a % ikki == 0 || a > 0) {
+if (a % ikki == 0 && a > 0) {
     console.log("a son juft va musbat son");
-} else if (a % ikki == 0 || a < 0) {
+} else if (a % ikki == 0 && a < 0) {
     console.log("a son juft va manfiy son");
-} else if (a % ikki !== 0 || a < 0) {
+} else if (a % ikki !== 0 && a < 0) {
     console.log("a son toq va manfiy son");
-} else if (a % ikki !== 0 || a > 0) {
+} else if (a % ikki !== 0 && a > 0) {
     console.log("a son toq va musbat son");
 } else if (a == 0) {
     console.log("juft ham emas toq ham emas, manfiy va musbat ham emas");
