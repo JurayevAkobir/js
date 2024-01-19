@@ -120,12 +120,14 @@
 // ! 7
 // * Declaration function
 
-function sumOfOdds(a, b, c){
-    if (a, b, c % 2 !== 0){
-        console.log(sumOfOdds);
+function sumOfOdds(start, end){
+    let sum = 0;
+    for(let i = start; i <= end; i++){
+        if (i % 2 != 0)
+        sum += i;
     }
-    return a + b + c
+    return sum
 }
-console.log(sumOfOdds(35, 5, 10));
+console.log(sumOfOdds(35, 43));
 // * Expression function
 // * Arrow function 
