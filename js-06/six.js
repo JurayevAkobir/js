@@ -30,11 +30,15 @@
 
 // ! 2
 
-// * declaration function
-// function fullName(){
+// !
+// // * declaration function
+// function fullName(){    
 //     let ism = prompt("ismingiz");
-//     return ism
+//     let familyangiz = prompt("familyangiz");
+//     return ism + familyangiz
 // }
+
+// console.log(fullName());
 
 // * Expression function
 
@@ -120,14 +124,28 @@
 // ! 7
 // * Declaration function
 
-function sumOfOdds(start, end){
-    let sum = 0;
-    for(let i = start; i <= end; i++){
-        if (i % 2 != 0)
-        sum += i;
-    }
-    return sum
-}
-console.log(sumOfOdds(35, 43));
+// function sumOfOdds(start, end){
+//     let sum = 0;
+//     for(let i = start; i <= end; i++){
+//         if (i % 2 != 0)
+//         sum += i;
+//     }
+//     return sum
+// }
+// console.log(sumOfOdds(35, 43));
 // * Expression function
 // * Arrow function 
+
+// ! 8.
+
+// * Declaration function
+
+// function sumOfOdds(start, end) {
+//     let sum = 0;
+//     for (let i = start; i <= end; i++) {
+//         if (i % 2 === 0)
+//             sum += i;
+//     }
+//     return sum
+// }
+// console.log(sumOfOdds(1, 5));
