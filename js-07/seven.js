@@ -1,3 +1,5 @@
+// * Filter - projects
+
 // ! 1.
 /* const users = [
     {
@@ -50,6 +52,7 @@ function findUserById(users, userId){
 } 
 findUserById(users, "ab12ex") */
 
+
 // ! 2.
 /*const users = [
     {
@@ -94,17 +97,14 @@ findUserById(users, "ab12ex") */
     }
 ];
 
-function findUserById(users, userEmail){
-    const findEmail = users.filter((user) => {
-        return user.email === userEmail
-    })
+function findUserEmail(users, userEmail){
+    const findEmail = users.filter((user) => user.email === userEmail)
     console.log(findEmail);
 } 
-findUserById(users, "martha@martha.com") */
+findUserEmail(users, "martha@martha.com")*/
 
 
 // ! 3. 
-
 /*const users = [
     {
         _id: "ab12ex",
@@ -148,16 +148,14 @@ findUserById(users, "martha@martha.com") */
     }
 ];
 
-function findUserById(users, userLogin){
-    const findLogin = users.filter((user) => {
-        return user.isLoggendIn === true
-    })
-    console.log(findLogin);
+function findUserTrue(userlist, isLoggedIn){
+    const filterUsers = userlist.filter((user) => user.isLoggendIn === isLoggedIn)
+    console.log(filterUsers);
 } 
-findUserById(users, "martha@martha.com")*/
+findUserTrue(users, false)*/
 
 
-// ? 4.
+// ! 4.
 /*const users = [
     {
         _id: "ab12ex",
@@ -201,18 +199,19 @@ findUserById(users, "martha@martha.com")*/
     }
 ];
 
-function findUserById(users, userEmail){
-    const findEmail = users.filter((user) => {
-        return user.email === userEmail
-    })
-    console.log(findEmail);
+function usersPassword(userList, userName, password){
+    const checkUser = userList.filter((user) => user.username === userName && user.password === password)
+    if (checkUser.length > 0) {
+        console.log(checkUser);
+    } else {
+        console.log("xato");
+    }
 } 
-findUserById(users, "martha@martha.com")*/
+usersPassword(users, "Tomas", "123333")*/
 
 
 // ! 5.
-// ? 4.
-const users = [
+/*const users = [
     {
         _id: "ab12ex",
         username: "Alex",
@@ -255,10 +254,8 @@ const users = [
     }
 ];
 
-function findUserById(users, userName){
-    const findName = users.filter((user) => {
-        return user.username === userName
-    })
-    console.log(findName);
+function usersCreateAt(users, userName){
+    const created = users.filter((user) => user.username === userName)[0]
+    console.log(created.createdAt);
 } 
-findUserById(users, "Alex")
+usersCreateAt(users, "Tomas")*/
